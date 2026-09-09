@@ -1,0 +1,4 @@
+rowid,modelname,imagefilename,classid,classtext,value,inference,modelrun,processed_flag,storeid,storename,s3path_actual_file,s3path_annotated_file
+3,yolo_activation,IMG-MSEM41OV-ZWYD.jpg,1056,RGB Crate Stacking,Y,1.0,2026-08-06 17:06:44.459155,N,1210110219,RAJ KIRANA PASAL,June_store_images/IMG-MSEM41OV-ZWYD.jpg,ModelResults/VisibleItem_520/IMG-MSEM41OV-ZWYD.jpg
+4,yolo_activation,IMG-MSD8JRB0-33WR.jpg,1064,Shelf Display,Y,1.0,2026-08-06 17:06:45.452970,N,3110112680,TULSI KIRANA PASAL,June_store_images/IMG-MSD8JRB0-33WR.jpg,ModelResults/VisibleItem_520/IMG-MSD8JRB0-33WR.jpg
+5,yolo_activation,IMG-MSD8JRTQ-ISNW.jpg,1053,DPS,Y,1.0,2026-08-06 17:06:45.858064,N,3110112680,TULSI KIRANA PASAL,June_store_images/IMG-MSD8JRTQ-ISNW.jpg,ModelResults/VisibleItem_520/IMG-MSD8JRTQ-ISNW.jpg

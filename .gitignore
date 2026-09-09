@@ -1,0 +1,27 @@
+# AWS credentials & secrets
+aws_credentials.json
+.env
+*.pem
+*.key
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

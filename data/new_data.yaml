@@ -1,0 +1,56 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 42
+names: [
+'Alcohol Bottle',
+'Coca-Cola 1000ml PET',
+'Coca-Cola 1500ml PET',
+'Coca-Cola 175ml Glass',
+'Coca-Cola 2000ml PET',
+'Coca-Cola 2250ml PET',
+'Coca-Cola 250ml Glass',
+'Coca-Cola 250ml PET',
+'Coca-Cola 500ml PET',
+'Coke Zero 250ml PET',
+'Coke Zero 500ml PET',
+'Fanta 175ml Glass',
+'Fanta Lemon 1000ml',
+'Fanta Lemon 2000ml PET',
+'Fanta Lemon 2250ml PET',
+'Fanta Lemon 250ml',
+'Fanta Orange 1000ml PET',
+'Fanta Orange 1500ml PET',
+'Fanta Orange 2000ml PET',
+'Fanta Orange 2250ml PET',
+'Fanta Orange 250ml Glass',
+'Fanta Orange 250ml PET',
+'Fanta Orange 500ml PET',
+'Kinley Soda 250ml Glass',
+'Kinley Soda 250ml PET',
+'Kinley Soda 500ml PET',
+'Kinley Water 1000ml PET',
+'Kinley Water 500ml PET',
+'Other Brand Glass',
+'Other CAN',
+'Other PET',
+'Other TPK',
+'Other Water Bottle',
+'Shelf-detection',
+'Sprite 1000ml PET',
+'Sprite 1500ml PET',
+'Sprite 175ml Glass',
+'Sprite 2000ml PET',
+'Sprite 2250ml PET',
+'Sprite 250ml Glass',
+'Sprite 250ml PET',
+'Sprite 500ml PET',
+]
+
+roboflow:
+  workspace: imageinsight-wwdyd
+  project: orgi-imageinsight
+  version: 5
+  license: Private
+  url: https://app.roboflow.com/imageinsight-wwdyd/orgi-imageinsight/5

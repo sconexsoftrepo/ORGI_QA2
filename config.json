@@ -1,0 +1,95 @@
+{
+  "db_config": {
+    "host": "100.42.188.112",
+    "port": 5432,
+    "database": "ImageInsight",
+    "user": "postgres",
+    "password": "sconex"
+  },
+  "s3_config": {
+    "bucket_name": "imageinsightimagesbeverages",
+    "image_folder_s3": "June_store_images/",
+    "access_key": "AKIA6D6JBNORLYOWHTZZ",
+    "secret_key": "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",
+    "region": "ap-south-1"
+  },
+  "chatgpt_config": {
+    "api_key": "",
+    "model": "gpt-4o",
+    "max_tokens": 2048,
+    "temperature": 0,
+    "image_detail": "auto",
+    "max_image_px": 1024,
+    "output_csv": "outputs/llm_rescorer_results.csv",
+    "prompt_file": "data/prompts/extended_group1.txt"
+  },
+  "ollama_config": {
+    "image_folder_s3": "STORE_IMAGES/",
+    "output_s3_folder": "ModelResults/",
+    "activation_yolo_model": "data/latest_activation.pt",
+    "activation_conf_threshold": 0.1,
+    "output_csv": "outputs/yolo_analysis_results.csv",
+    "class_ids_path": "data/class_ids.json",
+    "prompt_path": "data/prompts/",
+    "prompt_files": {
+      "extended_visibility_all": "extended_visibility_all.txt",
+      "extended_visibility_group1": "extended_group1.txt"
+    }
+  },
+  "groundingdino_config": {
+    "config_path": "GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+    "weights_path": "GroundingDINO/weights/groundingdino_swint_ogc.pth",
+    "specific_box_threshold": 0.28,
+    "specific_text_threshold": 0.25,
+    "generic_box_threshold": 0.38,
+    "generic_text_threshold": 0.28,
+    "theme_threshold_overrides": {
+      "produce": [0.28, 0.32],
+      "cup_family": [0.55, 0.5],
+      "steel_tableware": [0.55, 0.5],
+      "food": [0.34, 0.30],
+      "bottle_like_containers": [0.55, 0.5]
+    },
+    "dedupe_iou_thresh": 0.5,
+    "dedupe_containment_thresh": 0.6,
+    "cap_containment_thresh": 0.35,
+    "rescue_max_box_area_frac": 0.12,
+    "rescue_max_candidate_to_cap_ratio": 15.0,
+    "beverage_iou_thresh": 0.5,
+    "beverage_containment_thresh": 0.4,
+    "enable_bottle_shaped_personal_theme": false,
+    "bottle_shaped_terms": ["medicine bottle", "cosmetic bottle", "shampoo bottle", "glass jar"],
+    "bottle_shaped_beverage_iou_thresh": 0.2,
+    "bottle_shaped_beverage_containment_thresh": 0.2,
+    "column_overlap_min_vertical_frac": 0.5,
+    "max_box_area_frac": 0.65,
+    "min_region_std": 12.0,
+    "other_cap_prefix": "other"
+  },
+  "visicooler_config": {
+    "caps_model_path": "data/capmodel_june_26th.pt",
+    "sku_model_path": "data/availability_may_5th.pt",
+    "model_path": "data/capmodel_june_26th.pt",
+    "visicooler_model_path": "data/visicooler.pt",
+    "output_folder_path": "outputs/segmented_images/",
+    "cap_conf_threshold": 0.2,
+    "sku_conf_threshold": 0.12,
+    "conf_threshold": 0.12,
+    "visicooler_presence_subcategory_id": 601,
+    "visicooler_presence_conf_threshold": 0.1,
+    "visicooler_presence_output_csv": "outputs/visicooler_presence_results.csv",
+    "visicooler_presence_fallback_model_path": "yolov8x.pt",
+    "visicooler_presence_fallback_conf_threshold": 0.1
+  },
+  "planogram_config": {
+    "subcategory_id": 603,
+    "shelf_model_path": "data/shelfmodel.pt",
+    "shelf_class_id": 80,
+    "shelf_conf_threshold": 0.05,
+    "shelf_merge_threshold": 10,
+    "sku_model_path": "data/availability_may_5th.pt",
+    "availability_conf": 0.12,
+    "output_folder_path": "outputs/planogram_segmented_images/",
+    "output_s3_folder": "ModelResults/Planogram"
+  }
+}

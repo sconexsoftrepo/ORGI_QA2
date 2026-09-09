@@ -1,0 +1,39 @@
+{
+  "db_config": {
+    "host": "100.42.188.112",
+    "port": 5432,
+    "database": "ImageInsight",
+    "user": "postgres",
+    "password": "sconex"
+  },
+  "s3_config": {
+    "bucket_name": "imageinsightimagesbeverages",
+    "image_folder_s3": "STORE_IMAGES/",
+    "access_key": "AKIA6D6JBNORLYOWHTZZ",
+    "secret_key": "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",
+    "region": "ap-south-1"
+  },
+  "ollama_config": {
+    "image_folder_s3": "STORE_IMAGES/",
+    "output_s3_folder": "ModelResults/",
+    "activation_yolo_model": "data/activation_best.pt",
+    "activation_conf_threshold": 0.3,
+    "output_csv": "outputs/ollama_analysis_results.csv",
+    "class_ids_path": "data/class_ids.json",
+    "prompt_path": "data/prompts/",
+    "prompt_files": {
+      "extended_visibility_group1": "extended_group1.txt",
+      "extended_visibility_group2": "extended_group2.txt"
+    },
+    "ollama_host": "http://127.0.0.1:11434",
+    "ollama_enabled": true,
+    "ollama_model": "llava:7b"
+  },
+  "visicooler_config": {
+    "caps_model_path": "data/capmodelnew.pt",
+    "sku_model_path": "data/weights.pt",
+    "model_path": "data/capmodelnew.pt",
+    "output_folder_path": "outputs/segmented_images/",
+    "conf_threshold": 0.20
+  }
+}

@@ -1,0 +1,3 @@
+rowid,modelname,imagefilename,classid,classtext,value,inference,modelrun,processed_flag,storeid,storename,s3path_actual_file,s3path_annotated_file
+1,yolo_visicooler_presence,IMG-MSEM4153-7WIN.jpg,1001,Visicooler - Visicooler available,Y,0.24873393774032593,2026-08-06 17:05:41.187584,N,1210110219,RAJ KIRANA PASAL,June_store_images/IMG-MSEM4153-7WIN.jpg,ModelResults/Visicooler_520/IMG-MSEM4153-7WIN.jpg
+2,yolo_visicooler_presence,IMG-MSD8JLPU-FNO3.jpg,1001,Visicooler - Visicooler available,Y,0.8402267694473267,2026-08-06 17:05:42.137902,N,3110112680,TULSI KIRANA PASAL,June_store_images/IMG-MSD8JLPU-FNO3.jpg,ModelResults/Visicooler_520/IMG-MSD8JLPU-FNO3.jpg
